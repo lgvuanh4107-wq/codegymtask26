@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToonStream - Xem Hoạt Hình Trực Tuyến</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header cố định -->
+    <header class="main-header">
+        <div class="logo">
+            <h2>🎬 ToonStream</h2>
+        </div>
+        <nav class="head-link">
+            <ul>
+                <li><a href="#" class="active">Trang Chủ</a></li>
+                <li><a href="#">Mới Cập Nhật</a></li>
+                <li><a href="#">Xem Nhiều</a></li>
+                <li><a href="#">Thể Loại</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Khu vực nội dung chính -->
+    <div class="content-container">
+        <!-- Left Content: Danh sách video -->
+        <div class="left-content">
+            <h3>Danh Sách Phim</h3>
+            <ul>
+                <li class="video-item active" onclick="changeVideo('https://www.youtube.com/embed/tgbNymZ7vqY', 'Tập 1: Cuộc Phiêu Lưu Của Gấu Con', event)">
+                    <span>▶ Tập 1: Cuộc Phiêu Lưu Của Gấu Con</span>
+                </li>
+                <li class="video-item" onclick="changeVideo('https://www.youtube.com/embed/LXb3EKWsInQ', 'Tập 2: Vùng Đất Linh Hồn', event)">
+                    <span>▶ Tập 2: Vùng Đất Linh Hồn</span>
+                </li>
+                <li class="video-item" onclick="changeVideo('https://www.youtube.com/embed/3JZ_D3ELwOQ', 'Tập 3: Kỵ Sĩ Không Gian', event)">
+                    <span>▶ Tập 3: Kỵ Sĩ Không Gian</span>
+                </li>
+                <li class="video-item" onclick="changeVideo('https://www.youtube.com/embed/kJQP7kiw5Fk', 'Tập 4: Thế Giới Kẹo Ngọt', event)">
+                    <span>▶ Tập 4: Thế Giới Kẹo Ngọt</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Content: Khu vực phát video -->
+        <div class="right-content">
+            <h2 id="video-title">Tập 1: Cuộc Phiêu Lưu Của Gấu Con</h2>
+            <div class="video-wrapper">
+                <iframe id="main-video" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Animation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-description">
+                <h4>Mô tả nội dung:</h4>
+                <p>Bộ phim hoạt hình chọn lọc chất lượng cao (FullHD 1080p), thuyết minh tiếng Việt hoàn toàn miễn phí, không chứa quảng cáo gây gián đoạn.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 ToonStream - Trang Web Xem Hoạt Hình Trực Tuyến An Toàn Cho Trẻ Em.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
