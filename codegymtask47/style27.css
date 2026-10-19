@@ -1,0 +1,72 @@
+/* 1. Element Selector: Đổi màu nền của trang và phông chữ chung */
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #333;
+}
+
+/* 2. Element Selector: Căn giữa và định dạng tiêu đề h1 */
+h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* 3. Class Selector: Định dạng đoạn văn mô tả */
+.description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 4. Class Selector: Định dạng danh sách sở thích */
+.hobby-list {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* 5. Grouping / Element Selector: Định dạng các mục trong danh sách với màu sắc khác nhau */
+.hobby-item {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.hobby-item:nth-child(1) {
+    color: #e74c3c; /* Đỏ */
+}
+
+.hobby-item:nth-child(2) {
+    color: #27ae60; /* Xanh lá */
+}
+
+.hobby-item:nth-child(3) {
+    color: #2980b9; /* Xanh dương */
+}
+
+/* 6. Class Selector & Pseudo-classes: Định dạng nút bấm và hiệu ứng hover */
+.btn-click {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-click:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
