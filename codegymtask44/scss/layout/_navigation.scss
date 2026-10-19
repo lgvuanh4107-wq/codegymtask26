@@ -1,0 +1,22 @@
+.navbar {
+  background-color: $primary-color;
+  color: $text-light;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li a {
+      color: $text-light;
+      text-decoration: none;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
