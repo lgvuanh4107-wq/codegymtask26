@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Nhúng CSS - codegymtask26</title>
+    
+    <!-- PHẦN 2: Internal Style (Nhúng bằng thẻ style trong head) -->
+    <style>
+        .internal-text {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+
+    <!-- PHẦN 3: External Style (Liên kết tới file style.css bên ngoài) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bài tập Nhúng CSS vào trang HTML</h1>
+
+    <!-- Phần 1: Thay đổi màu sắc sử dụng inline-style -->
+    <div style="margin-bottom: 20px;">
+        <h3>Phần 1: Inline Style</h3>
+        <p style="color: red; font-size: 18px;">Đoạn văn này được thay đổi màu sắc bằng Inline Style (Màu đỏ).</p>
+    </div>
+
+    <!-- Phần 2: Thay đổi màu sắc sử dụng internal-style -->
+    <div style="margin-bottom: 20px;">
+        <h3>Phần 2: Internal Style</h3>
+        <p class="internal-text">Đoạn văn này được thay đổi màu sắc bằng Internal Style (Màu xanh lá).</p>
+    </div>
+
+    <!-- Phần 3: Thay đổi màu sắc sử dụng external-style -->
+    <div style="margin-bottom: 20px;">
+        <h3>Phần 3: External Style</h3>
+        <p class="external-text">Đoạn văn này được thay đổi màu sắc bằng External Style từ file style.css (Màu xanh dương).</p>
+    </div>
+
+</body>
+</html>
