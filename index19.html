@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích & Xây Dựng Bố Cục - codegymtask39</title>
+    <style>
+        /* CSS Reset cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 1. Header */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #e74c3c;
+            font-size: 28px;
+        }
+
+        /* 2. Navigation Menu */
+        nav {
+            background-color: #2c3e50;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #34495e;
+            color: #f1c40f;
+        }
+
+        /* 3. Content Section (Sử dụng Flexbox để chia 2 cột) */
+        .main-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px 0;
+        }
+        
+        .content {
+            flex: 3; /* Chiếm 3/4 không gian */
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .content h2 {
+            margin-bottom: 15px;
+            color: #2980b9;
+        }
+        .content p {
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            flex: 1; /* Chiếm 1/4 không gian */
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .sidebar-box {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px dashed #bdc3c7;
+        }
+
+        /* 4. Footer */
+        footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive cho Mobile */
+        @media (max-width: 768px) {
+            .main-wrapper {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Khối Header -->
+    <header>
+        <div class="container">
+            <h1>TechBlog Template</h1>
+            <div>
+                <input type="text" placeholder="Tìm kiếm..." style="padding: 5px;">
+                <button style="padding: 5px 10px;">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Khối Điều hướng -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Công Nghệ</a></li>
+                <li><a href="#">Thủ Thuật</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Khối Nội dung chính -->
+    <div class="container main-wrapper">
+        <!-- Cột bài viết (Main Content) -->
+        <main class="content">
+            <h2>Nhiệm vụ 1: Phân tích cấu trúc trang web</h2>
+            <p><strong>Trang web phân tích:</strong> Một trang tin tức công nghệ tiêu chuẩn.</p>
+            <ul>
+                <li><strong>Header:</strong> Đặt ở trên cùng, chứa Logo thương hiệu bên trái và công cụ tìm kiếm, nút đăng nhập ở bên phải. Nền trắng để làm nổi bật logo.</li>
+                <li><strong>Navigation Menu:</strong> Thanh điều hướng ngang nằm ngay dưới Header, nền tối màu, chứa các danh mục chính (Trang chủ, Công nghệ...).</li>
+                <li><strong>Content Section:</strong> Được chia làm 2 cột không bằng nhau. Cột trái lớn hơn chứa nội dung chính hoặc danh sách bài viết. Cột phải nhỏ hơn làm Sidebar chứa thông tin phụ.</li>
+                <li><strong>Footer:</strong> Khu vực dưới cùng của trang web, nền đen, chứa thông tin bản quyền và liên kết phụ trợ.</li>
+            </ul>
+            
+            <h2 style="margin-top: 30px;">Nhiệm vụ 2: Xây dựng bố cục</h2>
+            <p>Bạn đang xem chính kết quả của Nhiệm vụ 2. Giao diện này được xây dựng bằng HTML và CSS Flexbox mô phỏng chính xác cấu trúc đã phân tích ở trên!</p>
+        </main>
+
+        <!-- Cột phụ (Sidebar) -->
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p style="margin-bottom: 15px; font-size: 14px; color: #7f8c8d;">Nội dung phụ</p>
+            <div class="sidebar-box">
+                Banner Quảng Cáo 1
+            </div>
+            <div class="sidebar-box">
+                Bài viết xem nhiều
+            </div>
+        </aside>
+    </div>
+
+    <!-- Khối Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TechBlog Template. Designed by Luong Vu Anh.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
