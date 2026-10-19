@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục bằng Float - codegymtask26</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .left-column {
+            width: 60%;
+            float: left;
+            background-color: lightblue;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 150px;
+            border-radius: 4px;
+        }
+
+        .right-column {
+            width: 38%;
+            float: right;
+            background-color: lightgreen;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 150px;
+            border-radius: 4px;
+        }
+
+        /* Xử lý float (Clearfix) */
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <h3>Cột bên trái</h3>
+            <p>Chứa nội dung chính của trang web. Được canh chỉnh bằng thuộc tính <code>float: left</code> với chiều rộng 60%.</p>
+        </div>
+        <div class="right-column">
+            <h3>Cột bên phải</h3>
+            <p>Chứa sidebar. Được canh chỉnh bằng thuộc tính <code>float: right</code> với chiều rộng 38%.</p>
+        </div>
+    </div>
+
+</body>
+</html>
